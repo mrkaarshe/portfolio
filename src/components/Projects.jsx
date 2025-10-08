@@ -90,7 +90,7 @@ const Projects = () => {
                     <a
                     href="#"
                     target="_blank"
-                    className="w-[20%] py-3 border border-cyan-400 text-white text-center font-semibold rounded-lg 
+                    className="px-5 py-3 border border-cyan-400 text-white text-center font-semibold rounded-lg 
                                 hover:bg-cyan-400 transition-all duration-300 shadow-md 
                                 transform translate-y-1 group-hover:translate-y-0"
                     >
@@ -140,7 +140,7 @@ const Projects = () => {
                     <a
                     href="#"
                     target="_blank"
-                    className="w-[20%] py-3  border-cyan-400 border text-white text-center font-semibold rounded-lg 
+                    className="px-5 py-3  border-cyan-400 border text-white text-center font-semibold rounded-lg 
                                 hover:bg-cyan-600 transition-all duration-300 shadow-md 
                                 transform translate-y-1 group-hover:translate-y-0"
                     >
@@ -149,7 +149,7 @@ const Projects = () => {
                     <a
                     href="#"
                     target="_blank"
-                    className="w-[20%] py-3 border border-cyan-400 text-white text-center font-semibold rounded-lg 
+                    className="px-5 py-3 border border-cyan-400 text-white text-center font-semibold rounded-lg 
                                 hover:bg-cyan-400 transition-all duration-300 shadow-md 
                                 transform translate-y-1 group-hover:translate-y-0"
                     >
