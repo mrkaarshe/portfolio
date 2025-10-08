@@ -1,56 +1,88 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { FaCode, FaPaintBrush, FaMobileAlt, FaDatabase, FaSearch, FaServer } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-function Main() {
+const services = [
+  {
+    icon: <FaCode size={40} className="text-cyan-500" />,
+    title: "Web Development",
+    desc: "Building modern, responsive, and high-performance websites using HTML, CSS, JavaScript, React, and Node.js.",
+    aos: "fade-right",
+  },
+  {
+    icon: <FaPaintBrush size={40} className="text-cyan-500" />,
+    title: "UI / UX Design",
+    desc: "Creating beautiful and intuitive interfaces with a strong focus on user experience and brand identity.",
+    aos: "fade-up",
+  },
+  {
+    icon: <FaMobileAlt size={40} className="text-cyan-500" />,
+    title: "Responsive Design",
+    desc: "Making sure your website looks perfect on all devices — from large screens to mobile phones.",
+    aos: "fade-left",
+  },
+  {
+    icon: <FaDatabase size={40} className="text-cyan-500" />,
+    title: "Database Management",
+    desc: "Designing and managing efficient databases using MongoDB, MySQL, and other modern systems.",
+    aos: "fade-right",
+  },
+  {
+    icon: <FaSearch size={40} className="text-cyan-500" />,
+    title: "SEO Optimization",
+    desc: "Improving website visibility on search engines through SEO-friendly structure and best practices.",
+    aos: "fade-up",
+  },
+  {
+    icon: <FaServer size={40} className="text-cyan-500" />,
+    title: "Backend Development",
+    desc: "Building scalable and secure backends using Node.js, Express, and RESTful APIs.",
+    aos: "fade-left",
+  },
+];
+
+const Main = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation speed
+      once: false,    // animation dib ayuu u celinayaa marka la scroll gareeyo
+    });
+  }, []);
+
   return (
-    <main className='bg-[#f0f8ff] py-5 px-3 shadow-md hover:shadow-sm  rounded-4xl mb-1'>
-    <div className="main-header  font-sans font-extrabold text-gray-500 text-center mt-3 text-xs">
-    <h1 className=''>I collaborate with brands and agencies </h1>
-    <p>to bring bold ideas to life — creating designs and digital experiences</p>
-    <p> that leave a lasting impression.</p>
-    </div>
-    <div className="border-b-1 border-gray-400 max-w-5xl mx-auto my-10"></div>
-    <div className="main-content max-w-5xl mx-auto flex flex-col justify-between items-center gap-4 sm:flex-row py-10">
-   {/* UX & UI Design */}
-<div className="card shadow-sm rounded-xl py-5 duration-300 flex flex-col gap-3 w-[350px] hover:-translate-y-2 hover:duration-300 hover:border-b-3 hover:border-b-blue-700 px-2">
-  <i className="fa-solid fa-laptop text-2xl text-blue-600"></i>
-  <p className="font-semibold">UX & UI Design</p>
-  <p className="text-sm text-gray-600">
-    I design clean and user-friendly interfaces that provide smooth experiences across all devices.
-  </p>
-</div>
+    <section id="services" className="text-gray-300 py-20 px-6">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-cyan-400 mb-4 font-Goldman" data-aos="fade-down">
+          My Services
+        </h2>
+        <p className="text-gray-400 mb-12" data-aos="fade-up">
+          I offer a wide range of professional services to help you build, design, and grow your online presence.
+        </p>
 
-{/* Web Development */}
-<div className="card shadow-sm rounded-xl py-5 duration-300 flex flex-col gap-3 w-[350px] hover:-translate-y-2 hover:duration-300 hover:border-b-3 hover:border-b-green-600 px-2">
-  <i className="fa-solid fa-code text-2xl text-green-600"></i>
-  <p className="font-semibold">Web Development</p>
-  <p className="text-sm text-gray-600">
-    I build fast, responsive, and dynamic websites using modern technologies and best practices.
-  </p>
-</div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              data-aos={service.aos}
+              className="bg-slate-900/70 border border-cyan-800/30 rounded-2xl p-8 
+                         shadow-lg backdrop-blur-lg hover:border-cyan-500 
+                         transform hover:-translate-y-2 hover:shadow-cyan-500/20 
+                         transition-all duration-500 ease-in-out group"
+            >
+              <div className="flex justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+                {service.icon}
+              </div>
+              <h3 className="text-2xl font-semibold text-gray-300 mb-3">
+                {service.title}
+              </h3>
+              <p className="text-gray-400 leading-relaxed">{service.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-{/* Creative Design */}
-<div className="card shadow-sm rounded-xl py-5 duration-300 flex flex-col gap-3 w-[350px] hover:-translate-y-2 hover:duration-300 hover:border-b-3 hover:border-b-pink-600 px-2">
-  <i className="fa-regular fa-object-group text-2xl text-pink-600"></i>
-  <p className="font-semibold">Creative Design</p>
-  <p className="text-sm text-gray-600">
-    I craft visually engaging designs that help brands stand out and make an impact.
-  </p>
-</div>
-
-{/* App development */}
-<div className="card shadow-sm rounded-xl py-5 duration-300 flex flex-col gap-3 w-[350px] hover:-translate-y-2 hover:duration-300 hover:border-b-3 hover:border-b-purple-600 px-2">
-  <i className="fa-solid fa-mobile text-2xl text-purple-600"></i>
-  <p className="font-semibold">App Development</p>
-  <p className="text-sm text-gray-600">
-    I create modern, user-friendly mobile applications for all platforms.
-  </p>
-</div>
-
-
-
-    </div>
-   </main>
-  )
-}
-
-export default Main
+export default Main;

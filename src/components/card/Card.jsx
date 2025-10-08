@@ -3,7 +3,7 @@ import React from 'react'
 function Card() {
   return (
 
-    <div className="card bg-white shadow-md rounded-2xl max-w-2xl mx-auto flex flex-col  pb-10 ">
+    <div className="card bg-slate-950 shadow-md rounded-2xl max-w-2xl mx-auto flex flex-col  pb-10 ">
     <h1 className='text-4xl text-center py-5 mb-5 border-b-1 border-gray-300 font-bold text-gray-500 bg-black '>CONTACT ME</h1>
     <div className=" flex flex-col justify-between items-center sm:flex-row md:flex-row  px-5">
       <div className="connect hover:translate-y-[-5px] hover:duration-300 duration-300 flex flex-col  gap-5 shadow-md p-5  rounded-xl w-[200px]:">
