@@ -97,8 +97,9 @@ export default function AboutMe() {
       <h3 className="text-cyan-400 font-bold text-4xl max-w-sm mx-auto border-gray-100 text-center my-5 border-b-1 py-3 font-Goldman ">About Me</h3>
       
       <div   className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3    ">
-         <div data-aos="fade-right" className=" bg-slate-800/10 rounded-3xl">
+         <div data-aos="fade-right" className=" bg-gradient-to-t from-slate-950 to-slate-900/10 relative rounded-3xl">
            <img src={profile} className="w-100 h-100 sm:w-84 sm:h-70  object-center bg-cover bg-center "  alt="potfolio-image" />
+           <div className="absolute w-full h-1/5 blur-sm bg-gray-950/70 rounded-3xl  bottom-0"></div>
           
          </div>
           <div  data-aos="fade-up" className="mt-6 md:mt-0 flex flex-col  w-1/1">
