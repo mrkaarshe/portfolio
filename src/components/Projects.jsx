@@ -34,13 +34,13 @@ const Projects = () => {
 
   {/* Overlay */}
   <div
-    className="absolute bottom-0 bg-slate-800/20 h-1/4 rounded-t-4xl w-1/1  opacity-0 group-hover:opacity-100 
+    className="absolute bottom-0 bg-slate-800/20 h-1/3 rounded-t-4xl w-1/1  opacity-0 group-hover:opacity-100 
                flex  items-center justify-center  gap-5 pb-4 transition-opacity duration-500"
   >
     <a
       href="#"
       target="_blank"
-      className="w-[20%] py-3  border-cyan-400 border text-white text-center font-semibold rounded-lg 
+      className="px-5 py-3  border-cyan-400 text-sm border text-white text-center font-semibold rounded-lg 
                  hover:bg-cyan-600 transition-all duration-300 shadow-md 
                  transform translate-y-1 group-hover:translate-y-0"
     >
@@ -49,7 +49,7 @@ const Projects = () => {
     <a
       href="#"
       target="_blank"
-      className="w-[20%] py-3 border border-cyan-400 text-white text-center font-semibold rounded-lg 
+      className="px-5 py-3 border border-cyan-400 text-white text-center font-semibold rounded-lg 
                  hover:bg-cyan-400 transition-all duration-300 shadow-md 
                  transform translate-y-1 group-hover:translate-y-0"
     >
@@ -75,13 +75,13 @@ const Projects = () => {
 
                 {/* Overlay */}
                 <div
-                    className="absolute bottom-0 w-1/1 bg-slate-800/20 h-1/4 rounded-t-4xl opacity-0 group-hover:opacity-100 
+                    className="absolute bottom-0 w-1/1 bg-slate-800/20 h-1/3 rounded-t-4xl opacity-0 group-hover:opacity-100 
                             flex  items-center justify-center  gap-5 pb-4 transition-opacity duration-500"
                 >
                     <a
                     href="#"
                     target="_blank"
-                    className="w-[20%] py-3  border-cyan-400 border text-white text-center font-semibold rounded-lg 
+                    className="px-5 py-3  border-cyan-400 text-sm border text-white text-center font-semibold rounded-lg 
                                 hover:bg-cyan-600 transition-all duration-300 shadow-md 
                                 transform translate-y-1 group-hover:translate-y-0"
                     >
@@ -134,13 +134,13 @@ const Projects = () => {
 
                 {/* Overlay */}
                 <div
-                    className="absolute bottom-0 w-1/1 bg-slate-800/20 h-1/4 rounded-t-4xl opacity-0 group-hover:opacity-100 
+                    className="absolute bottom-0 w-1/1 bg-slate-800/20 h-1/3 rounded-t-4xl opacity-0 group-hover:opacity-100 
                             flex  items-center justify-center  gap-5 pb-4 transition-opacity duration-500"
                 >
                     <a
                     href="#"
                     target="_blank"
-                    className="px-5 py-3  border-cyan-400 border text-white text-center font-semibold rounded-lg 
+                    className="px-5 py-3  border-cyan-400 text-sm border text-white text-center font-semibold rounded-lg 
                                 hover:bg-cyan-600 transition-all duration-300 shadow-md 
                                 transform translate-y-1 group-hover:translate-y-0"
                     >
