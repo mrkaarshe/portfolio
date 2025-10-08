@@ -18,7 +18,7 @@ export default function Header() {
     
   <header id='home' className=' px-2  relative  max-w-7xl mx-auto  rounded-b-4xl pb-1   ' >
 
-    <section className="w-full  text-white flex flex-col lg:flex-row  pt-40 pb-20 mt-10 items-center">
+    <section className="w-full  text-white flex flex-col lg:flex-row py-10 md:py-30 mt-10 items-center">
       <div data-aos="fade-right" className=" w-1/1 lg:w-1/2 p-5   flex flex-col justify-center  items-start  md:items-start">
       <div className="flex gap-2 justify-center items-center">
         <div >
