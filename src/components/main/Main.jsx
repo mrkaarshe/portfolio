@@ -65,7 +65,7 @@ const Main = () => {
             <div
               key={index}
               data-aos={service.aos}
-              className="bg-slate-900/70 border border-cyan-800/30 rounded-2xl p-8 
+              className="border border-cyan-800/30 rounded-2xl p-8 
                          shadow-lg backdrop-blur-lg hover:border-cyan-500 
                          transform hover:-translate-y-2 hover:shadow-cyan-500/20 
                          transition-all duration-500 ease-in-out group"

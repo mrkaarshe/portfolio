@@ -41,12 +41,8 @@ export default function Header() {
         <p className='text-gray-300'>Frontend / Full-stack web developer</p>
 
         <p className="text-gray-400 text-sm md:text-md">
-          I'm a passionate web developer specializing in building modern,
-          responsive websites with Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Alias, laboriosam laborum modi dolor rerum tempore
-          vel nobis itaque optio blanditiis amet minima delectus odit quidem esse
-          neque nostrum possimus eveniet vitae eum. Doloremque molestias, cum
-          adipisci quam blanditiis temporibus maiores?
+         I'm a passionate Web Developer who specializes in building modern, responsive, and user-friendly websites. I love turning creative ideas into clean, functional code and crafting digital experiences that look great on every device.
+         focused on creating beautiful, responsive, and high-performance web applications. I enjoy solving complex problems with elegant front-end solutions and bringing designs to life using the latest web technologies.
           <span className="text-cyan-600 font-bold">React</span> &{" "}
           <span className="text-cyan-600 font-bold">TailwindCSS</span>.
         </p>

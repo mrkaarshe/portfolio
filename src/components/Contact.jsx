@@ -65,12 +65,12 @@ const Contact = () => {
 
         <div className=' w-full rounded-2xl bg-slate-800/50 p-5 flex flex-col gap-5'>
                 <h2 className='text-white text-2xl'>Lets Work <span className='text-cyan-400'>To Gether</span></h2>
-            <form  className='flex flex-col gap-5'>
-                    <input type="text" className=' h-10 px-3 w-1/1  bg-slate-900 rounded-lg text-white border-2 border-slate-700  focus:border-cyan-400 outline-0   placeholder-[#14ca8d ' required placeholder='Your Name' />
-                    <input type="email" className=' h-10 px-3 w-1/1  bg-slate-900 rounded-lg text-white border-2 border-slate-700 focus:border-cyan-400 outline-0  placeholder-[#14ca8d ' required placeholder='Your Email' />
-                    <input type="text" className=' h-10 px-3 w-1/1  bg-slate-900 rounded-lg text-white border-2 border-slate-700 focus:border-cyan-400 outline-0  placeholder-[#14ca8d ' required placeholder='Your Subject' />
-                    <textarea name="" className=' min-h-40 min-w-full text-white bg-slate-900 max-h-40 border-2 border-slate-700 focus:border-cyan-400 outline-0  rounded-lg placeholder-[#14ca8d p-5' placeholder='type---' id=""></textarea>
-                    <button  className='w-full border-2 border-cyan-400 text-white rounded-lg py-4 hover:bg-cyan-400 transform-colors duration-300'>Send</button>
+            <form method='post' action={'https://formspree.io/f/mnnogbza'}  className='flex flex-col gap-5'>
+                    <input name='name' id='name' type="text" className=' h-10 px-3 w-1/1  bg-slate-900 rounded-lg text-white border-2 border-slate-700  focus:border-cyan-400 outline-0   placeholder-[#14ca8d ' required placeholder='Your Name' />
+                    <input name='email' id='email' type="email" className=' h-10 px-3 w-1/1  bg-slate-900 rounded-lg text-white border-2 border-slate-700 focus:border-cyan-400 outline-0  placeholder-[#14ca8d ' required placeholder='Your Email' />
+                    <input name='subject' id='subject' type="text" className=' h-10 px-3 w-1/1  bg-slate-900 rounded-lg text-white border-2 border-slate-700 focus:border-cyan-400 outline-0  placeholder-[#14ca8d ' required placeholder='Your Subject' />
+                    <textarea name="message" id='message' className=' min-h-40 min-w-full text-white bg-slate-900 max-h-40 border-2 border-slate-700 focus:border-cyan-400 outline-0  rounded-lg placeholder-[#14ca8d p-5' placeholder='type---' ></textarea>
+                    <button type='submit'  className='w-full border-2 border-cyan-400 text-white rounded-lg py-4 hover:bg-cyan-400 transform-colors duration-300'>Send</button>
             </form>
         </div>
 
